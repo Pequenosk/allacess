@@ -111,3 +111,12 @@ body {
         height: 63px;
         border-radius: 50%;
     }
+.alert {
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+}
+.alert p {
+    background: #0c4a0c;
+    padding: 8px;
+}
