@@ -861,38 +861,38 @@ div.award {
 }
 
 blockquote {
-    background-color: #ffffff; 
-    border-width: 1px 1px 1px 6px;
-    padding: 8px;
+    background-color: #ffffff!important;; 
+    border-width: 1px 1px 1px 6px!important;;
+    padding: 8px!important;;
 }
 
 blockquote:before {
-    content: "\f10d";
-    font-family: 'Font Awesome 6 Pro';
-    font-size: 2.6rem;
-    right: 14px;
-    top: 8px;
+    content: "\f10d"!important;;
+    font-family: 'Font Awesome 6 Pro'!important;;
+    font-size: 2.6rem!important;;
+    right: 14px!important;;
+    top: 8px!important;;
 }
 
 blockquote cite {
-    font-weight: 900;
-    margin-bottom: 7px;
-    border-radius: 5px;
-    color: black;
-    padding: 4px 0px;
+    font-weight: 900!important;;
+    margin-bottom: 7px!important;;
+    border-radius: 5px!important;;
+    color: black!important;;
+    padding: 4px 0px!important;;
 }
 
 dl.codebox {
-    background-color: rgb(68 68 68);
-    border-color: rgb(0 0 0);
-    border-radius: 0 5px 5px 0;
-    border-width: 1px 1px 1px 6px;
-    padding: 7px 10px;
+    background-color: rgb(68 68 68)!important;;
+    border-color: rgb(0 0 0)!important;;
+    border-radius: 0 5px 5px 0!important;;
+    border-width: 1px 1px 1px 6px!important;;
+    padding: 7px 10px!important;;
 }
 
 dl.codebox dt {
-    border-bottom: 0;
-    color: #9f9f9f;
+    border-bottom: 0!important;;
+    color: #9f9f9f!important;;
 }
 
 code.hljs {
@@ -905,16 +905,16 @@ code.hljs {
 }
 
 dl.spoiler dt {
-    border-bottom: 0;
-    margin-bottom: 0px;
-    font-size: 1.3rem;
-    font-weight: 900;
-    display: block;
-    color: #3e3e3e;
+    border-bottom: 0!important;;
+    margin-bottom: 0px!important;;
+    font-size: 1.3rem!important;;
+    font-weight: 900!important;;
+    display: block!important;;
+    color: #3e3e3e!important;;
 }
 
 dl.codebox.spoiler::before {
-    display: none; 
+    display: none!important;; 
 }
 
 /* =============================================================================================================== */
