@@ -1,7 +1,10 @@
 /*
 #00X - Gerais
 */
-
+* {
+  all: !important;
+}
+    
 ::-webkit-scrollbar {
     width: 7px
 }
