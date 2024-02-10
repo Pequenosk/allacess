@@ -526,7 +526,7 @@ a.forumtitle:hover, a.topictitle:hover {
     background: #fff;
 }
 
-.post .post-head .topic-title {
+.post h2.topic-title a {
     max-width: 600px!important;
 }
 
