@@ -1,10 +1,5 @@
-/*
-#00X - Gerais
-*/
-* {
-  all: !important;
-}
-    
+/* #00X - Gerais */
+
 ::-webkit-scrollbar {
     width: 7px
 }
@@ -116,16 +111,16 @@ a:hover {
 /* =============================================================================================================== */
 
 .headerbar {
-    background-color: #172329;
-    background-image: url(https://i.imgur.com/ILgUPRF.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 400px;
-    background-color: #345b00;
-    margin-bottom: 0;
-    margin-top: 0px;
-    position: relative;
+    background-color: #172329!important;
+    background-image: url(https://i.imgur.com/ILgUPRF.png)!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: auto!important;
+    height: 400px!important;
+    background-color: #345b00!important;
+    margin-bottom: 0!important;
+    margin-top: 0px!important;
+    position: relative!important;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
 }
@@ -156,7 +151,7 @@ body {
 }
 
 .menu_thm a {
-  color: #fff;
+  color: #fff!important;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -186,7 +181,7 @@ body {
 }
 
 .dropbtn {
-      cursor: pointer;
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 55px;
@@ -259,7 +254,7 @@ body {
 }
 
 .dropdown-content a {
-  color: white;
+  color: white!important;
   padding: 3px 10px;
   text-decoration: none;
   display: block;
