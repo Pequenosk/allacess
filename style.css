@@ -339,6 +339,10 @@ dd.posts dfn, dd.topics dfn {
     text-transform: uppercase;
 }
 
+.hierarchy {
+    text-transform: none!important;
+}
+
 .accordion {
     display: flex;
     flex-direction: column;
