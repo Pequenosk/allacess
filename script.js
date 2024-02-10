@@ -15,30 +15,33 @@ function replaceNicksWithImages(containerSelector) {
 
 
 // ---- Função para tooltips de imagens ---- //
-function showImageTooltip(image) {
-  // Obtém o título da imagem
-  var title = image.data("title");
-  // Cria um span para o tooltip
-  var titleSpan = $('<span class="image-title">' + title + '</span>');
-  // Posiciona o tooltip sobre a imagem
-  titleSpan.css({
-    position: "absolute",
-    top: image.offset().top + image.height() / 1 - titleSpan.height() / 2,
-    left: image.offset().left + image.width() / 8 - titleSpan.width() / 1,
-    backgroundColor: "rgba(0, 0, 0, 0.7)", // Semi-transparent background
-    color: "white",
-    padding: "5px 10px",
-    borderRadius: "5px",
-    fontFamily: "Poppins",
-  });
-  // Adiciona o tooltip ao body
-  $("body").append(titleSpan);
-}
+$(document).ready(function() {
+  $('.accordion-content img').hover(function() {
+    // Get the title of the image
+    var title = $(this).data('title');
 
-function hideImageTooltip() {
-  // Remove o tooltip
-  $(".image-title").remove();
-}
+    // Create a new span element to display the title
+    var titleSpan = $('<span class="image-title">' + title + '</span>');
+
+    // Position the title span over the image
+    titleSpan.css({
+      position: 'absolute',
+      top: $(this).offset().top + $(this).height() / 1 - titleSpan.height() / 2,
+      left: $(this).offset().left + $(this).width() / 8 - titleSpan.width() / 1,
+      backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent background
+      color: 'white',
+      padding: '5px 10px',
+      borderRadius: '5px',
+      fontFamily: 'Poppins'
+    });
+
+    // Append the title span to the body (or any suitable container)
+    $('body').append(titleSpan);
+  }, function() {
+    // Remove the title span when the mouse leaves
+    $('.image-title').remove();
+  });
+});
 
 
 // ---- Ocultar estatísticas por padrão ---- //
@@ -50,24 +53,33 @@ $(document).ready(function() {
     $(".statistics").show();
   }
 });
+
+
 // Tooltips para imagens
 $(document).ready(function() {
-  // Exibe o tooltip ao passar o mouse sobre a imagem
-  $(".accordion-content img, .statistics-item img").hover(
-    function() {
-      showImageTooltip($(this));
-    },
-    // Remove o tooltip ao sair da imagem
-    function() {
-      hideImageTooltip();
-    }
-  );
-});
-// Conversão de nicks em imagens
-$(document).ready(function() {
-  // Converte nicks em imagens no accordion
-  replaceNicksWithImages(".accordion-content.users");
+  $('.statistics-item img').hover(function() {
+    // Get the title of the image
+    var title = $(this).data('title');
 
-  // Converte nicks em imagens nas estatísticas
-  replaceNicksWithImages(".statistics-item");
+    // Create a new span element to display the title
+    var titleSpan = $('<span class="image-title">' + title + '</span>');
+
+    // Position the title span over the image
+    titleSpan.css({
+      position: 'absolute',
+      top: $(this).offset().top + $(this).height() / 1 - titleSpan.height() / 2,
+      left: $(this).offset().left + $(this).width() / 8 - titleSpan.width() / 1,
+      backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent background
+      color: 'white',
+      padding: '5px 10px',
+      borderRadius: '5px',
+      fontFamily: 'Poppins'
+    });
+
+    // Append the title span to the body (or any suitable container)
+    $('body').append(titleSpan);
+  }, function() {
+    // Remove the title span when the mouse leaves
+    $('.image-title').remove();
+  });
 });
