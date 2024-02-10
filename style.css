@@ -334,7 +334,7 @@ dd.posts, dd.topics, dd.views {
 }
 
 dd.posts dfn, dd.topics dfn {
-    display: block;
+    display: block!important;
     font-style: normal;
     text-transform: uppercase;
 }
