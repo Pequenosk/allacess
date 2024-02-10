@@ -1,1 +1,1013 @@
-oi
+/*
+#00X - Gerais
+*/
+
+::-webkit-scrollbar {
+    width: 7px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #c5c5c5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #236c28;
+    border-radius: 7px;
+    border: 0px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #353535;
+}
+
+* {
+    transition-duration: 100ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+h1 {
+    color: #333;
+    font-family: 'Poppins'!important;
+}
+
+h3, .h3 {
+    border: 0;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    font-weight: 500;
+    margin: 0;
+}
+
+a:hover {
+    color: inherit;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-secondary-color: rgba(33, 37, 41, 0.75);
+    --bs-secondary-color-rgb: 33, 37, 41;
+    --bs-secondary-bg: #e9ecef;
+    --bs-secondary-bg-rgb: 233, 236, 239;
+    --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+    --bs-tertiary-color-rgb: 33, 37, 41;
+    --bs-tertiary-bg: #f8f9fa;
+    --bs-tertiary-bg-rgb: 248, 249, 250;
+    --bs-heading-color: inherit;
+    --bs-link-color: #0d6efd;
+    --bs-link-color-rgb: 13, 110, 253;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: #0a58ca;
+    --bs-link-hover-color-rgb: 10, 88, 202;
+    --bs-code-color: #d63384;
+    --bs-highlight-color: #212529;
+    --bs-highlight-bg: #fff3cd;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #c5cacf;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --bs-button-color: #1f7f35;
+    --bs-button-hover-color: #004906;
+}
+
+/* =============================================================================================================== */
+/* #001 - HEADER */
+/* =============================================================================================================== */
+
+.headerbar {
+    background-color: #172329;
+    background-image: url(https://i.imgur.com/ILgUPRF.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 400px;
+    background-color: #345b00;
+    margin-bottom: 0;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+}
+
+body {
+    margin: 0;
+}
+
+.header_thm {
+    background-color: #00000000!important;
+    color: #fff!important;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.container_thm {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 55px;
+}
+
+.menu_thm {
+    display: flex;
+    line-height: 40px;
+}
+
+.menu_thm a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-size: 15px;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu_thm a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    top: 55px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0px;
+}
+.menu_thm a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.dropbtn {
+      cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    top: 7px;
+    left: 85px;
+}
+
+.dropbtn img {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 44%;
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+    image-rendering: pixelated;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #00562a70;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px -2px rgba(0,0,0,0.53);
+}
+
+.dropdown {
+    height: 55px;
+    position: absolute;
+    left: 88%;
+    display: inline-flex;
+}
+
+.namedrop {
+    position: absolute;
+    width: 500px;
+    text-align: end;
+    left: -410px; 
+}
+
+.namedrop p {
+    font-size: 15px;
+    margin-right: 10px;
+    line-height: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-content {
+    top: 65px;
+    left: -35px;
+    display: none;
+    position: absolute;
+    background-color: #255a31;
+    min-width: 177px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 1;
+    border-radius: 9px;
+    padding: 12px 10px;
+}
+
+.dropdown-content:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #397246;
+    top: -10px;
+    left: 78%;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 3px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover:after {
+  width: 0%; 
+  left: 0;
+}
+
+.dropdown-content a:hover {
+  background-color: #1e4e29;
+  border-radius: 5px;
+}
+
+#meuperfil {margin-bottom:0;}
+
+.show {display:block;}
+
+/* =============================================================================================================== */
+/* #002 - BODY */
+/* =============================================================================================================== */
+
+.forabg, .forumbg {
+    background-color: transparent!important; 
+}
+
+.forabg .header, .forumbg .header{
+    border-radius: 3px;
+    border: 1px solid #007609;
+    color: #FFF;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    position: relative;
+    background-color: #279f42;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 6px;
+}
+
+ul.topiclist dd.dterm h2, ul.topiclist dt h2, .table-title, .table-title h2 {
+    display: inline;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 15px;
+    font-family: 'Poppins';
+}
+
+ul.topiclist.forums {
+    background-color: transparent;
+}
+
+li.row {
+    border: none;
+    background-color: #fff;
+    box-shadow: inset 0 3px rgba(255,255,255,0.4), inset 0 -5px rgba(0,0,0,0.05), inset 0 -30px rgba(0,0,0,0.01), inset 0 -1px rgba(0,0,0,0.15), 0 4px rgba(0,0,0,0.05);
+    margin-bottom: 3px !important;
+}
+
+a.forumtitle:link {
+    color: #222222;
+}
+
+a.forumtitle:visited {
+    color: #222222;
+}
+
+ul.forums dl.icon dd.dterm > div {
+    margin-left: 25px!important;
+}
+
+dd.posts, dd.topics, dd.views {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 8%;
+    color: #adadad;
+}
+
+dd.posts dfn, dd.topics dfn {
+    display: block;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    margin-bottom: 8px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #279f42;
+    border: 1px solid #279b2f;
+    border-radius: 5px 5px 0 0;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.accordion-content {
+    display: none;
+    padding: 8px;
+    border: 1px solid rgb(183 183 183);
+    border-radius: 0px 0px 5px 5px;
+    background: #fff;
+    font-size: 0px;
+}
+
+.accordion-content b {
+    font-size: 15px;
+    margin-left: 35px;
+}
+
+.accordion-content img {
+    width: 40px;
+    image-rendering: pixelated;
+}
+
+.accordion-content .legend b a::after {
+    content: "  ";
+    font-weight: 500;
+    color: #000;
+}
+
+.accordion-content .legend b:last-child a::after {
+    content: "";
+}
+
+/* =============================================================================================================== */
+/* #003 - FORUM E SUBFORUM */
+/* =============================================================================================================== */
+
+.block {
+    background-color: var(--bs-white);
+    color: inherit;
+    box-shadow: var(--bs-box-shadow-sm);
+}
+
+.block .h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.block .h3 i {
+    margin-right: 0.5em;
+}
+
+.sub-header {
+    margin-bottom: 3em;
+}
+
+h1.page-title {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+li.header dt {
+    font-family: 'Poppins';
+    font-size: 1.5em;
+}
+
+.breadcrump, .sub-header-path {
+    background: #fff;
+    border-left: solid 5px #279f42;
+    box-shadow: var(--bs-box-shadow-sm);
+    border-radius: 6px;
+    font-size: 0;
+    font-family: 'Poppins';
+}
+
+.breadcrump a {
+    color: #333;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 13px;
+    padding: 9px 16px;
+    position: relative;
+}
+
+.breadcrump a + a:before {
+    font-family: 'Font Awesome 6 Pro';
+    content: "\f054";
+    font-size: 16px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.topic-title-container > img, fieldset dl:after {
+    display: none;
+}
+
+dl.icon {
+    background-image: none!important;
+}
+
+ul.topiclist dd, .topics .row .lastpost {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.topiclist .row dl.icon {
+    padding: 1.5em 0;
+}
+
+dd.dterm {
+    padding: 0em 2em!important;
+}
+
+li.header dl.icon {
+    padding: 1.5em;
+}
+
+.forabg dd.dterm {
+    padding: 0!important;
+}
+
+.forabg .table-title h2 {
+    font-size: 1em!important;
+    font-weight: 450!important;
+    line-height: normal!important;
+}
+
+ul.topiclist dl.icon dt {
+    padding: 0!important;
+}
+
+ul.topiclist dd.dterm h2 {
+    line-height: normal!important;
+}
+
+.topic-title-container {
+    margin-bottom: 0.75rem;
+}
+
+a.forumtitle:hover, a.topictitle:hover {
+    text-decoration: none;
+}
+
+.views dfn {
+    display: block!important;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+/* =============================================================================================================== */
+/* #004 - TOPICOS */
+/* =============================================================================================================== */
+
+.post {
+    border-radius: 10px;
+}
+
+.postprofile {
+    background: white;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #e3e3e3;
+    padding-top: 3em;
+}
+
+.postprofile-name {
+    line-height: normal;
+    font-size: 1.25em;
+    margin: 0.75em 0;
+}
+
+.post-head {
+    background-color: rgb(0 0 0 / 8%);
+    border-style: none;
+    margin-left: 211px;
+    padding: 9px 18px;
+}
+
+.row2 {
+    background-color: #ffffff;
+}
+
+.postprofile-avatar img {
+    border-radius: 5px;
+    border: 0px solid #fff;
+    width: 170px;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.postprofile:before {
+    content: url(http://habboemotion.com/resources/images/icons/offline.gif);
+    left: 5px;
+    position: absolute;
+    top: 5px;
+}
+
+.online .postprofile:before {
+    content: url(http://habboemotion.com/resources/images/icons/online.gif);
+}
+
+.online:before {
+    display: none;
+}
+
+.profile-icons li {
+    float: left;
+    margin: 0 0 0 6px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #c5c5c5;
+}
+
+.profile-icons i {
+    position: relative;
+    top: 4px;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%;
+    }
+
+    50% {
+        background-position: 100% 19%;
+    }
+
+    100% {
+        background-position: 0% 82%;
+    }
+}
+/* INICIO - Ranks tópicos */
+.rank {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto 0;
+    width: 174px;
+    padding: 0px;
+    border-radius: 6px;
+    border-bottom: 2px solid rgba(0,0,0,0.2); 
+}
+.rank:before {
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    left: 5px;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Font Awesome 6 Pro';
+}
+
+.rank.adm { background-image: linear-gradient(124deg, #814d77, #5a659d, #76b36e); background-size: 1800% 1800%; animation: rainbow 5s linear infinite;}
+.rank.adm:before {content: "\f121";}
+.rank.cdp { background: repeating-linear-gradient(to right, #b55485, #bfb000, #538caf, #15bb3a); background-size: 1800% 1800%; animation: rainbow 3s ease infinite;}
+.rank.cdp:before {content:'\f505';}
+.rank.cor { background: #000;}
+.rank.cor:before {content:'\f24e';}
+.rank.cot { background-image: repeating-linear-gradient(to right, #6e0000, #bf0000); background-size: 1800% 1800%; animation: rainbow 3s linear infinite;}
+.rank.cot:before {content:'\f714';}
+.rank.gir { background: repeating-linear-gradient(to right, #3D3D3D, #000000, #f0f0f0, #3D3D3D, #000000); background-size: 1800% 1800%; animation: rainbow 3s ease infinite;}
+.rank.gir:before {content:'\f0e7'; color: #ffbf00;}
+.rank.rh { background: #61b5ff;}
+.rank.rh:before {content:'\f2c2';}
+.rank.am { background: #76c16e;}
+.rank.am:before {content:'\f501';}
+.rank.dip { background: #2a287e;}
+.rank.dip:before {content:'\f19d';}
+.rank.dir { background: #9eb360;}
+.rank.dir:before {content:'\f66f';}
+
+/* FIM - Ranks tópicos  & INICIO Grupos Pers */
+
+/* Chefe-de-Polícia */
+a[style*="#000099"], span[style*="#000099"] {
+   background: repeating-linear-gradient(to right, #b55485, #bfb000, #538caf, #15bb3a);
+   -webkit-background-clip: text;
+   background-size: 1800% 1800%;
+   -webkit-text-fill-color: transparent;
+   animation: rainbow 3s ease infinite;
+}
+div [style*="#000099"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f505';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Corregedoria */
+div [style*="#1A1A1A"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f24e';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Comando de Operações Táticas */
+div [style*="#C20000"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f714';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Grupamento de Intervenção Rápida */
+a[style*="#616161"], span[style*="#616161"] {
+    background: repeating-linear-gradient(to right, #3D3D3D, #000000, #f0f0f0, #3D3D3D, #000000);
+    -webkit-background-clip: text;
+    background-size: 1800% 1800%;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 3s ease infinite;
+}
+div [style*="#616161"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f0e7';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+  background: #fbd035;
+  -webkit-background-clip: text;
+  background-size: 1800% 1800%;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Recursos Humanos */
+div [style*="#0092C7"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f2c2';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Academia Militar */
+div [style*="#36BD00"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f501';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Departamento de Instrução Policial */
+div [style*="#004EAD"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f19d';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Diretoria Executiva */
+div [style*="#8F7C00"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f66f';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Corpo de Oficiais Superiores */
+div [style*="#757575"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f4ba';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Conselho Deliberativo Militar */
+div [style*="#C29B00"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f6de';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+/* Ofc. Reformados/Veteranos */
+div [style*="#C9C9C9"]::before {
+  font-family: "Font Awesome 6 Pro"; 
+  content:'\f559';
+  margin-right: 3px;
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+
+.dd_award {
+    border-width: 0px;
+    box-shadow: none;
+    width: 100%;
+}
+
+div.award {
+    border: 1px solid #ededed;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+}
+
+.award_tooltiptext {
+    color: #242424;
+    border: 1px solid #279f42;    
+}
+
+.award_tooltiptext::after {
+    border-color: transparent #279f42 transparent transparent
+}
+
+.dd_award + .award_more {
+    width: 25%;
+    color: #279f42;    
+    margin-top: -1px;
+    border-radius: 0 0 6px 6px;
+    margin-left: 38%;
+}
+
+.postprofile-rank {
+   border-style: none; 
+}
+
+.fields1 dt, .fields1 dd {
+    margin: 0!important;
+    width: auto!important;
+}
+
+.fields1 .inputbox.medium, .fields1 select {
+    border: 2px solid var(--bs-border-color)!important;
+    border-radius: 0.25em;
+    font-family: Poppins;
+    font-size: 1em;
+    line-height: normal;
+    padding: 0.5em;
+    width: 75%!important;
+    color: var(--bs-dark);
+}
+
+.fields1 select {
+    width: 20%!important;
+    margin-left: 2em!important;
+}
+
+.fields1 dt, .fields1 dd {
+    margin: 0!important;
+    width: auto!important;
+    display: flex;
+    align-items: center;
+}
+
+#smiley-box {
+    display: none;
+}
+
+#message-box {
+    margin: 0;
+}
+
+blockquote {
+    background-color: #ffffff; 
+    border-width: 1px 1px 1px 6px;
+    padding: 8px;
+}
+
+blockquote:before {
+    content: "\f10d";
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 2.6rem;
+    right: 14px;
+    top: 8px;
+}
+
+blockquote cite {
+    font-weight: 900;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    color: black;
+    padding: 4px 0px;
+}
+
+dl.codebox {
+    background-color: rgb(68 68 68);
+    border-color: rgb(0 0 0);
+    border-radius: 0 5px 5px 0;
+    border-width: 1px 1px 1px 6px;
+    padding: 7px 10px;
+}
+
+dl.codebox dt {
+    border-bottom: 0;
+    color: #9f9f9f;
+}
+
+code.hljs {
+    margin: -6px 0 -8px!important;
+}
+
+.spoiler {
+    background-color: rgb(213 213 213)!important;
+    border-color: rgb(235 235 235)!important; 
+}
+
+dl.spoiler dt {
+    border-bottom: 0;
+    margin-bottom: 0px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    display: block;
+    color: #3e3e3e;
+}
+
+dl.codebox.spoiler::before {
+    display: none; 
+}
+
+/* =============================================================================================================== */
+/* #005 - BUTTON */
+/* =============================================================================================================== */
+
+.button1, .button2, input.button2, input[type="submit"] {
+    background-color: var(--bs-button-color);
+    font-family: 'Poppins';
+    font-size: 1em;
+    box-shadow: var( --bs-box-shadow-sm)!important;
+}
+
+.button1:hover, .button2:hover, input.button2:hover, input[type="submit"]:hover {
+    background-color: var(--bs-button-hover-color)!important;
+    box-shadow: inherit;
+}
+
+.adminbutton {
+    background-color: var(--bs-button-color);
+    width: 162px;
+    height: 30px;
+    position: fixed;
+    bottom: 5px;
+    right: 3px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    line-height: 31px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var( --bs-box-shadow-sm);
+}
+
+.adminbutton:hover {
+    background-color: var(--bs-button-hover-color);
+    box-shadow: inherit;
+}
+
+.adminbutton a {
+    color: white; 
+}
+
+fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="preview"] {
+    margin: 0 1em;
+    font-size: 1.25em;
+    padding: 0.5em 1.5em;
+}
+
+/* =============================================================================================================== */
+/* #006 - FOOTER */
+/* =============================================================================================================== */
+
+.statistics {
+    background-color: #ffffff00;
+}
+
+.wrap {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 28px;
+}
+
+.statistics-item {
+    width: 12%;
+    font-size: 0;
+    background: #279f42;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 1rem;
+}
+
+.statistics-item p {
+    font-family: 'Poppins';
+    margin-bottom: 5px
+}
+
+.statistics-item > strong {
+    font-size: 40px;
+    font-family: 'Poppins';
+}
+
+.statistics-item img {
+    width: 40px;
+    margin-top: -13px
+}    
+
+.footer-tv {
+    background: #9b9b9b url(https://i.imgur.com/ZODAdEV.png);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.footer-main p {
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4); 
+}
+
+#page-footer {
+    background-color: #626262;
+}
+
+.footerbar-system, .footerbar-user {
+    color: #FFF;
+    clear: both;
+    display: flex;
+    font-size: 13px;
+    overflow: hidden;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+
+.footerbar-system {
+    padding: 10px 0;
+}
+
+.footerbar-system .rightside {
+    margin: 0 0 0 25px;
+}
