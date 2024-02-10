@@ -20,9 +20,9 @@
 }
 
 * {
-    transition-duration: 100ms;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
+    transition-duration: 100ms!important;
+    transition-property: all!important;
+    transition-timing-function: ease-in-out!important;
 }
 
 h1 {
@@ -921,7 +921,7 @@ dl.codebox.spoiler::before {
 }
 
 .adminbutton a {
-    color: white; 
+    color: white!important; 
 }
 
 fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="preview"] {
@@ -935,18 +935,18 @@ fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="
 /* =============================================================================================================== */
 
 .statistics {
-    background-color: #ffffff00;
+    background-color: #ffffff00!important;
 }
 
 .wrap {
-    width: 98%;
+    width: 98%!important;
     display: flex;
     justify-content: space-around;
-    padding: 0 28px;
+    padding: 0 28px!important;
 }
 
 .statistics-item {
-    width: 12%;
+    width: 12%!important;
     font-size: 0;
     background: #279f42;
     border-radius: 5px;
@@ -989,23 +989,23 @@ fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="
 }
 
 #page-footer {
-    background-color: #626262;
+    background-color: #626262!important;
 }
 
 .footerbar-system, .footerbar-user {
-    color: #FFF;
-    clear: both;
-    display: flex;
-    font-size: 13px;
-    overflow: hidden;
-    justify-content: space-between;
+    color: #FFF!important;
+    clear: both!important;
+    display: flex!important;
+    font-size: 13px!important;
+    overflow: hidden!important;
+    justify-content: space-between!important;
     font-family: 'Poppins';
 }
 
 .footerbar-system {
-    padding: 10px 0;
+    padding: 10px 0!important;
 }
 
 .footerbar-system .rightside {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 25px!important;
 }
