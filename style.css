@@ -793,8 +793,8 @@ div.award {
 }
 
 .award_tooltiptext {
-    color: #242424;
-    border: 1px solid #279f42;    
+    color: #242424!important;
+    border: 1px solid #279f42!important;    
 }
 
 .award_tooltiptext::after {
