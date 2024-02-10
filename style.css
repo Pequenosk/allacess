@@ -296,11 +296,11 @@ body {
 }
 
 ul.topiclist dd.dterm h2, ul.topiclist dt h2, .table-title, .table-title h2 {
-    display: inline;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 15px;
-    font-family: 'Poppins';
+    display: inline!important;
+    font-size: 18px!important;
+    font-weight: 200!important;
+    line-height: 15px!important;
+    font-family: 'Poppins'!important;
 }
 
 ul.topiclist.forums {
@@ -315,11 +315,11 @@ li.row {
 }
 
 a.forumtitle:link {
-    color: #222222;
+    color: #222222!important;
 }
 
 a.forumtitle:visited {
-    color: #222222;
+    color: #222222!important;
 }
 
 ul.forums dl.icon dd.dterm > div {
