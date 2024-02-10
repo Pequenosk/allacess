@@ -1,16 +1,26 @@
 // ---- Funções para conversão de nicks em imagens ---- //
-function nickToImage(nick) {
-  // Retorna uma string HTML com a imagem do Habbo
-  return `<img src="https://www.habbonce.site/api/imagens?nick=${nick}&head_direction=3&direction=3&size=l&gesture=&headonly=true&action=std,crr=&img_format=PNG" alt="${nick}" data-title="${nick}">`;
-}
-
-function replaceNicksWithImages(containerSelector) {
-  // Converte nicks em imagens dentro do container especificado
-  $(containerSelector + " a").each(function() {
+$(document).ready(function() {
+  // Função para converter nick em imagem
+  function nickToImage(nick) {
+    return `<img src="https://www.habbonce.site/api/imagens?nick=${nick}&head_direction=3&direction=3&size=l&gesture=&headonly=true&action=std,crr=&img_format=PNG" alt="${nick}" data-title="${nick}">`;
+  }
+  // Substituir nicks por imagens
+  $(".accordion-content.users a").each(function() {
     var nick = $(this).text();
     $(this).replaceWith(nickToImage(nick));
   });
-}
+});
+$(document).ready(function() {
+  // Função para converter nick em imagem
+  function nickToImage(nick) {
+    return `<img src="https://www.habbonce.site/api/imagens?nick=${nick}&head_direction=3&direction=3&size=l&gesture=&headonly=true&action=std,crr=&img_format=PNG" alt="${nick}" data-title="${nick}">`;
+  }
+  // Substituir nicks por imagens
+  $(".statistics-item a").each(function() {
+    var nick = $(this).text();
+    $(this).replaceWith(nickToImage(nick));
+  });
+});
 
 
 
