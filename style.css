@@ -933,7 +933,9 @@ fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="
 }    
 
 .footer-tv {
-    background: #9b9b9b url(https://i.imgur.com/ZODAdEV.png);
+    background: linear-gradient(to bottom, rgba(6, 6, 6, 0.74) 0, rgba(60, 60, 58, 0.76) 100%), url(https://i.imgur.com/LHMJX8S.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-main {
