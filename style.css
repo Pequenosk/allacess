@@ -112,7 +112,7 @@ a:hover {
 
 .headerbar {
     background-color: #172329!important;
-    background-image: url(https://i.imgur.com/ILgUPRF.png)!important;
+    background-image: url(https://i.imgur.com/JJZcEH8.png)!important;
     background-position: center!important;
     background-repeat: no-repeat!important;
     background-size: auto!important;
@@ -130,13 +130,17 @@ body {
 }
 
 .header_thm {
-    background-color: #00000000!important;
+    background-color: #0000006e!important;
     color: #fff!important;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     left: 0;
     right: 0;
     top: 0;
+}
+
+.menu-escuro {
+  background-color: #333!important;
 }
 
 .container_thm {
