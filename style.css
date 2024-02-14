@@ -130,7 +130,7 @@ body {
 }
 
 .header_thm {
-    background-color: #0000006e!important;
+    background-color: #0000006e;
     color: #fff!important;
     position: fixed;
     z-index: 999;
