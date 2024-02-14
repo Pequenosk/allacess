@@ -943,6 +943,7 @@ fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="
     flex-direction: column;
     color: white;
     font-family: 'Poppins';
+    padding: 15px;
 }
 
 .footer-main p {
