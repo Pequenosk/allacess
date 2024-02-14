@@ -282,13 +282,13 @@ body {
 
 .forabg .header, .forumbg .header{
     border-radius: 3px;
-    border: 1px solid #007609;
+    border: 1px solid #1e1e1e;
     color: #FFF;
     display: block;
     font-weight: 400;
     font-size: 13px;
     position: relative;
-    background-color: #279f42;
+    background-color: #262626;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin-bottom: 6px;
 }
@@ -353,8 +353,8 @@ dd.posts dfn, dd.topics dfn {
 .accordion-header {
     cursor: pointer;
     padding: 8px;
-    background-color: #279f42;
-    border: 1px solid #279b2f;
+    background-color: #262626;
+    border: 1px solid #262626;
     border-radius: 5px 5px 0 0;
     text-align: left;
     font-size: 16px;
@@ -911,7 +911,7 @@ fieldset.submit-buttons input[name="post"], fieldset.submit-buttons input[name="
 .statistics-item {
     width: 12%!important;
     font-size: 0;
-    background: #279f42;
+    background: #262626;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     padding: 1rem;
