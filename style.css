@@ -231,7 +231,7 @@ body {
     left: -35px;
     display: none;
     position: absolute;
-    background-color: #255a31;
+    background-color: #345600;
     min-width: 177px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     z-index: 1;
@@ -264,7 +264,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #1e4e29;
+  background-color: #1e3200;
   border-radius: 5px;
 }
 
