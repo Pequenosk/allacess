@@ -609,6 +609,18 @@ a.forumtitle:hover, a.topictitle:hover {
     top: 4px;
 }
 
+.postprofile-avatar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 13;
+    top: -20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
 @keyframes rainbow {
     0% {
         background-position: 0% 82%;
