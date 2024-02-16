@@ -570,12 +570,15 @@ a.forumtitle:hover, a.topictitle:hover {
     background-color: #ffffff!important;
 }
 
+.postprofile-avatar {
+    margin-top: 20px;
+}
 .postprofile-avatar img {
-    border-radius: 5px;
-    border: 0px solid #fff;
-    width: 170px;
-    height: auto;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px!important;
+    border: 0px solid #fff!important;
+    width: 140px!important;
+    height: auto!important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px!important;
 }
 
 .postprofile:before {
