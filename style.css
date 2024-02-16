@@ -870,6 +870,241 @@ div.award {
     margin: 0!important;
 }
 
+/* 7.0 - MODTOOLS */
+.mod_box {
+    top: 73px;
+    -moz-background-clip: padding;
+    background: #fafafa;
+    background-clip: padding-box;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #666;
+    width: 200px;
+    line-height: 1;
+    position: absolute;
+}
+
+#quick_reply .mod_box {
+    background: #ccc;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #666;
+    width: 250px;
+    line-height: 1;
+    top: 38px;
+}
+
+.sceditor-button-staff.disabled div {
+    opacity: 1.0 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.sceditor-button-staff div{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1721/1721923.png) !important;
+    background-size: 16px !important;
+    background-position: center center !important;
+}
+
+.success, .information, .warn, .alert, .custom, .dev, .jrevo, .admin, .audi {
+    width: 95%;
+    height: auto;
+    padding: 1.4em;
+    margin: 1em;
+    /*border: 2px solid;*/
+    text-align: left;
+    border-radius: 2px;
+    font-weight: 300;
+    color: white;
+}
+
+.mod_editor_message {
+    padding: 2px 5px;
+    text-align: left;
+}
+
+.mod_groups {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.mod_groups li {
+    list-style-type: none;
+}
+
+.copyright_e {
+    background: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.crhtable {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    width: 1%;
+    display: table-cell;
+    padding-right: 70px;
+    border-collapse: collapse;
+}
+
+.crhtd {
+    font-family: "FontAwesome";
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.25)!important;
+    padding: 24px!important;
+    user-select: none;
+}
+
+.att {
+    background-color: #68B800;
+}
+
+.att2 {
+    padding: 24px 16px!important;
+}
+
+.del {
+    background-color: #EF3333;
+}
+
+.del2 {
+    padding: 24px 19px!important;
+}
+
+.inf {
+    background-color: #00B5D1;
+}
+
+.war {
+    background-color: #F5AE42;
+}
+
+.tec {
+    background-color: #673ab7;
+}
+
+.tec2 {
+    padding: 24px 19px!important;
+}
+
+.cor {
+    background-color: #322f38;
+}
+
+.cor2 {
+    padding: 24px 19px!important;
+}
+
+.ins {
+    background-color: #4695d9;
+}
+
+.ins2 {
+    padding: 24px 19px!important;
+}
+
+.tre {
+    background-color: #f21818;
+}
+
+.sup {
+    background-color: #2bcf02;
+}
+
+.prof {
+    background-color: #821fa0;
+}
+
+.customi {
+    background-color: #3a99d9;
+}
+
+.customi2 {
+    padding: 24px 19px!important;
+}
+
+.consmin {
+    background-color: #2c3e50;
+}
+
+.consmin2 {
+    padding: 24px 19px!important;
+}
+
+.success a, .information a, .warn a, .alert a, .custom a, .dev a, .jrevo a, .admin a, .aud a {
+    color: #ecf0f1!important;
+    text-decoration: underline!important;
+}
+
+.success {
+    /*color: #270;*/
+    background-color: #00a300;
+}
+
+.success tr:first-child::before {
+    content: '\F058 ';
+    font-family: "FontAwesome";
+}
+
+.alert {
+    /*color: #9F6000;*/
+    background-color: #ffc40d;
+}
+
+.alert tr::before {
+    content: '\F071 ';
+    font-family: FontAwesome;
+}
+
+.warn {
+    /*color: #D8000C;*/
+    background-color: #e54d42;
+}
+
+.warn tr::before {
+    content: '\F057 ';
+    font-family: FontAwesome;
+}
+
+.information {
+    /*color: #059;*/
+    background-color: #3a99d9;
+}
+
+.information tr::before {
+    content: '\F05a ';
+    font-family: FontAwesome;
+}
+
+.custom {
+    background-color: #2C3E50;
+}
+
+.custom tr::before {
+    content: '\F069 ';
+    font-family: FontAwesome;
+}
+
+.dev {
+    background-color: #3296FA;
+}
+
+.dev tr::before {
+    content: '\F121 ';
+    font-family: FontAwesome;
+}
+
+.jrevo {
+    background-color: #00468c;
+}
+
+#preview .postbody table .crhtd2, #preview .postbody td .crhtd2, div[class*='post--'] .postbody table .crhtd2, div[class*='post--'] .postbody td .crhtd2 {
+    border: none!important;
+}
+
 /* =============================================================================================================== */
 /* #005 - BUTTON */
 /* =============================================================================================================== */
