@@ -623,6 +623,29 @@ a.forumtitle:hover, a.topictitle:hover {
     image-rendering: pixelated;
 }
 
+.postbit_cover {
+    opacity: .5;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    max-height: 202px;
+    background-size: cover!important;
+}
+
+.postbit_cover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom,transparent,#fff);
+}
+
 @keyframes rainbow {
     0% {
         background-position: 0% 82%;
